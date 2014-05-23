@@ -1,6 +1,7 @@
 // import the CSS framework
 @import "bootstrap";
 
+
 $darkteal: #55B4B0;
 
 %teal-button {
@@ -41,7 +42,7 @@ img {
   // background-attachment: fixed;
 
   .headers {
-    height: 350px;
+    height: 342px;
     font-family: abril-fatface, serif;
 
     .top-header {
@@ -64,7 +65,7 @@ img {
   }
 
   .navigation {
-    height: 45px;
+    height: 58px;
     font-size: 0;
 
     .nav {
@@ -78,8 +79,14 @@ img {
         color: white;
         letter-spacing: 1px;
 
-        &:hover {
-          cursor: pointer;
+        a {
+          @extend %transition;
+          color: white;
+
+          &:hover {
+            background-color: white;
+            color: orange;
+          }
         }
       }
     }
