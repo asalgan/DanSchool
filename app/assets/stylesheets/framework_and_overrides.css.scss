@@ -1,6 +1,10 @@
 // import the CSS framework
 @import "bootstrap";
 
+body {
+  font-family: 'Noto Sans', sans-serif;
+   -webkit-font-smoothing: antialiased;
+}
 
 $darkteal: #55B4B0;
 
@@ -94,9 +98,8 @@ img {
 }
 
 .second-section {
-  height: 300px;
+  height: 450px;
   // background-color: #f8f9fb; 
-  font-family: 'Noto Sans', sans-serif;
 
   .section-two-header {
     text-align: center;
@@ -116,17 +119,61 @@ img {
     text-align: center;
     font-size: 16px;
     line-height: 24px;
+    font-family: 'Noto Sans', sans-serif;
+    
   }
-}
 
-.link {
+  .link {
   text-align: center;
 
-  .learn-more {
+    .learn-more {
       font-size: 16px;
 
       &:hover {
       text-decoration: none;
+      }
     }
   }
 }
+
+.third-section {
+  height: 250px;
+  background-color: $darkteal;
+
+  .third-section-content {
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    margin-top: 80px;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 1px;
+  }
+}
+
+.fourth-section {
+  height: 400px;
+
+  .fa {
+    font-size: 40px;
+    background-color: #ff6666;
+    color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+    margin-top: 46px;
+  }
+
+  .bullets {
+    margin-top: 30px;
+    height: 152px;
+
+    .content {
+      height: 152px;
+    }
+  }
+}
+
+
+
