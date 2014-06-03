@@ -152,31 +152,31 @@ img {
 }
 
 .fourth-section {
-  height: 400px;
-
-  .fa {
-    font-size: 40px;
-    background-color: #ff6666;
-    color: white;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    text-align: center;
-    padding: 10px;
-    margin-top: 15px;
-    float: left;
-  }
+  min-height: 620px;
 
   .bullets {
-    margin-top: 30px;
-    height: 152px;
     display: inline-block;
+    margin-bottom: 2%;
+
+    .fa {
+      font-size: 40px;
+      background-color: #ff6666;
+      color: white;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 3%;
+    }
 
     .content {
-      height: 152px;
+      min-height: 152px;
+      margin-top: 3%;
 
       h3 {
-        // margin-left: 180px;
+        margin-top: 0px;
+        margin-left: 20px;
       }
 
       p {
@@ -189,5 +189,8 @@ img {
   }
 }
 
+.fifth-section {
+  min-height: 200px;
+}
 
 
