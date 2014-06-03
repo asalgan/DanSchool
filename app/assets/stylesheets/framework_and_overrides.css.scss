@@ -38,15 +38,14 @@ img {
 }
 
 .top-section {
-  height: 400px;
+  min-height: 400px;
   background-image: url(/assets/school.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 0px -180px;
-  // background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 
   .headers {
-    height: 342px;
+    min-height: 342px;
     font-family: abril-fatface, serif;
 
     .top-header {
@@ -65,11 +64,12 @@ img {
       line-height: 60px;
       font-size: 46px;
       letter-spacing:2px;
+      float: left;
     }
   }
 
   .navigation {
-    height: 58px;
+    min-height: 58px;
     font-size: 0;
 
     .nav {
@@ -98,7 +98,7 @@ img {
 }
 
 .second-section {
-  height: 450px;
+  min-height: 450px;
   // background-color: #f8f9fb; 
 
   .section-two-header {
@@ -137,13 +137,14 @@ img {
 }
 
 .third-section {
-  height: 250px;
+  min-height: 188px;
   background-color: $darkteal;
 
   .third-section-content {
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
-    margin-top: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-size: 16px;
     color: white;
     letter-spacing: 1px;
@@ -162,15 +163,28 @@ img {
     border-radius: 50%;
     text-align: center;
     padding: 10px;
-    margin-top: 46px;
+    margin-top: 15px;
+    float: left;
   }
 
   .bullets {
     margin-top: 30px;
     height: 152px;
+    display: inline-block;
 
     .content {
       height: 152px;
+
+      h3 {
+        // margin-left: 180px;
+      }
+
+      p {
+        display: inline-block;
+        margin-left: 20px;
+        font-size: 16px;
+        line-height: 24px;
+      }
     }
   }
 }
