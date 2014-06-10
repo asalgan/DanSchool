@@ -89,7 +89,7 @@ img {
 
           &:hover {
             background-color: white;
-            color: orange;
+            color: $darkteal;
           }
         }
       }
@@ -107,17 +107,20 @@ img {
     padding-bottom: 20px;
     font-family: source-sans-pro, sans-serif;
     border-bottom: 1px solid #bbb;
+    color: #444;
   }
 
   .section-two-class-header {
     text-align: center;
     margin-top: 30px;
+    color: #444;
   }
 
   .secton-two-content {
     margin-top: 20px;
     text-align: center;
     font-size: 16px;
+    color: #444;
     line-height: 24px;
     font-family: 'Noto Sans', sans-serif;
     
@@ -183,6 +186,7 @@ img {
         display: inline-block;
         margin-left: 20px;
         font-size: 16px;
+        color: #444;
         line-height: 24px;
       }
     }
@@ -190,7 +194,29 @@ img {
 }
 
 .fifth-section {
-  min-height: 200px;
+  min-height: 250px;
+  background-color: #eee;
+
+  .sponsors-header {
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    color: #444;
+  }
+
+  .sponsors {
+    margin-top: 20px;
+
+    .sponsor-logo {
+      max-height: 120px;
+      max-width: 120px;
+      display: inline-block;
+      margin-left: 40px;
+    }
+  }
+}
+
+.sixth-section {
+  min-height: 400px;
 }
 
 
