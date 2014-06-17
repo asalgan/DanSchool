@@ -219,4 +219,19 @@ img {
   min-height: 400px;
 }
 
+.course-info {
+  min-height: 500px;
+  background-image: url('/assets/background.jpg');
+  background-position: center;
 
+  .featured-content {
+    margin-top: 40px;
+    height: 350px;
+
+    .teacher-pic {
+      background-color: white;
+      height: 350px;
+      padding: 0px;
+    }
+  }
+}
