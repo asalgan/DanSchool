@@ -74,7 +74,7 @@ DanSchool::Application.configure do
 
   config.action_mailer.smtp_settings = {
     address: "smtp.gmail.com",
-    port: 587,
+    port: 25,
     domain: "www.gmail.com",
     authentication: "plain",
     user_name: ENV["GMAIL_USERNAME"],
