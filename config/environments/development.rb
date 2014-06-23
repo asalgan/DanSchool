@@ -27,10 +27,10 @@ DanSchool::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 
-  config.action_mailer.smtp_settings = {
-    address: "smtp.sendgrid.net",
+  ActionMailer::Base.smtp_settings =  = {
+    address: "smtp.gmail.com",
     port: 587,
-    domain: ENV["DOMAIN_NAME"],
+    domain: "gmail.com",
     authentication: "plain",
     user_name: ENV["SENDGRID_USERNAME"],
     password: ENV["SENDGRID_PASSWORD"]
