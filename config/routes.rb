@@ -6,7 +6,7 @@ DanSchool::Application.routes.draw do
 	get '/classes/public_speaking' => 'classes#public_speaking'
 	get '/classes/social_enterprise' => 'classes#social_enterprise'
 
-	match '/contacts',     to: 'contacts#new',             via: 'get'
+	# match '/contacts',     to: 'contacts#new',             via: 'get'
 	resources "contacts", only: [:new, :create]
 	
 end
