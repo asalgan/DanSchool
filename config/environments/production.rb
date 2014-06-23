@@ -77,8 +77,8 @@ DanSchool::Application.configure do
     port: 587,
     domain: "heroku.com",
     authentication: "plain",
-    user_name: ENV["GMAIL_USERNAME"],
-    password: ENV["GMAIL_PASSWORD"]
+    user_name: ENV["SENDGRID_USERNAME"],
+    password: ENV["SENDGRID_PASSWORD"]
   }
   # ActionMailer Config
   config.action_mailer.default_url_options = { :host => 'danschool.herokuapp.com/' }
