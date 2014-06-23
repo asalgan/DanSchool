@@ -1,6 +1,24 @@
 // import the CSS framework
 @import "bootstrap";
 
+%form-fields {
+  width: 50%;
+  border-radius: 3px;
+  border: 1px solid #C0C0C0;
+  padding: 8px 6px 6px 6px;
+  line-height: 17px;
+  margin: 0 0 16px 0;
+  font-family: AvenirLT-Heavy,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+%transition {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
 body {
   font-family: 'Noto Sans', sans-serif;
    -webkit-font-smoothing: antialiased;
@@ -216,7 +234,74 @@ img {
 }
 
 .sixth-section {
-  min-height: 400px;
+  min-height: 500px;
+
+  .contact-us-form {
+    border: 1px solid #C0C0C0;
+    margin-top: 40px;
+    padding: 0px;
+    padding-bottom: 30px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.15);
+    border-radius: 3px;
+
+    h3 {
+      text-align: center;
+      margin: 0px;
+      padding: 10px;
+      font-family: source-sans-pro, sans-serif;
+      color: white;
+      background-color: #f3715d;
+      margin-bottom: 15px;
+    }
+
+    label {
+      width: 100px;
+      vertical-align: top;
+      margin-top: 20px;
+    }
+
+    #contact_name, #contact_email {
+      @extend %form-fields;
+      height: 38px;
+      width: 380px;
+      font-weight: 400;
+      font-size: 16px;
+      color: #515357;
+      padding-left: 5px;
+      margin-top: 10px;
+    }
+
+    #contact_message {
+      @extend %form-fields;
+      width: 380px;
+      font-weight: 400;
+      font-size: 16px;
+      color: #515357;
+      padding-left: 5px;
+      margin-top: 10px;
+      height: 80px;
+    }
+
+    .contact-submit {
+      height: 40px;
+      width: 130px;
+      background-color: #4D96B0;
+      border: none;
+      font-family: 'Noto Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      @extend %transition;
+      font-weight: 600;
+      border-radius: 3px;
+
+      &:hover {
+        background-color: darken(#4D96B0, 10%)
+      }
+    }
+
+    .thanks {
+      margin-top: 10px;
+    }
+  }
 }
 
 .course-info {
@@ -268,31 +353,3 @@ img {
 
 .hidden { display: none; }
 /*flash*/
-
-.alert-error {
-background-color: #f2dede;
-border-color: #eed3d7;
-color: #b94a48;
-text-align: left;
-}
-
-.alert-alert {
-background-color: #f2dede;
-border-color: #eed3d7;
-color: #b94a48;
-text-align: left;
-}
-
-.alert-success {
-background-color: #dff0d8;
-border-color: #d6e9c6;
-color: #468847;
-text-align: left;
-}
-
-.alert-notice {
-background-color: #dff0d8;
-border-color: #d6e9c6;
-color: #468847;
-text-align: left;
-}

@@ -15,3 +15,15 @@
 //= require turbolinks
 //= require bootstrap
 //= require_tree .
+
+$(document).ready(function() { 
+
+	$('.contact-submit').click(function () {
+    var $this = $(this);
+    $this.button('loading');
+    setTimeout(function() {
+        $this.button('reset');
+    }, 3500);
+   });
+
+});
