@@ -306,8 +306,9 @@ img {
 
 .course-info {
   min-height: 500px;
-  background-image: url('/assets/background.jpg');
-  background-position: center;
+  background-image: url('/assets/entrep.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .featured-content {
     margin-top: 40px;
