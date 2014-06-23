@@ -9,7 +9,7 @@ ActionMailer::Base.smtp_settings = {
   :password => ENV["SENDGRID_PASSWORD"],
   :domain => "danschool.herokuapp.com",
   :address => "smtp.gmail.com",
-  :port => 587,
+  :port => 25,
   :authentication => :plain,
   :enable_starttls_auto => true
 }
