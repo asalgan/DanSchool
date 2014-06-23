@@ -1,5 +1,4 @@
 class Contact < MailForm::Base
-  default to: 'asalganik1@gmail.com'
 
   attribute :name,      :validate => true
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
