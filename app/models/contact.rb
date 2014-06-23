@@ -1,40 +1,18 @@
-class Contact
- extend ActiveModel::Naming
- include ActiveModel::Conversion
- include ActiveModel::Validations
-  
-  attr_accessor :name, :email, :message
-  
-  validates :name, 
-            :presence => true
-  
-  validates :email,
-            :format => { :with => /\b[A-Z0-9._%a-z\-]+@(?:[A-Z0-9a-z\-]+\.)+[A-Za-z]{2,4}\z/ }
-  
-  validates :message,
-            :length => { :minimum => 10, :maximum => 1000 }
-            
+class Contact < MailForm::Base
 
-  
-  def initialize(attributes = {})
-    attributes.each do |name, value|
-      send("#{name}=", value)
-    end
-  end
-  
-  def deliver
-    return false unless valid?
-    Pony.mail({
-      :from => %("#{name}" <#{email}>),
-      :reply_to => email,
-      :subject => "Website inquiry",
-      :body => message
-      # :html_body => simple_format(message)
-    })
-  end
-      
-  def persisted?
-    false
+  attribute :name,      :validate => true
+  attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
+  attribute :message
+  attribute :nickname,  :captcha  => true
+
+  # Declare the e-mail headers. It accepts anything the mail method
+  # in ActionMailer accepts.
+  def headers
+    {
+      :subject => "Contact Form",
+      :to => "asalganik1@gmail.com",
+      :from => %("#{name}" <#{email}>)
+    }
   end
 
 end

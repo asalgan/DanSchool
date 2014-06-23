@@ -1,32 +1,16 @@
-<h1>Want to get in touch?</h1>
-<p>Please fill out the form below and we'll get back to you as soon as possible.</p>
- 
-<%= form_for @contact do |f| %>
-  <% if @contact.errors.any? %>
-    <ul>
-      <% @contact.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-    </ul>
-  <% end %>
+<div align="center">
+  <h3>Send A message to Us</h3>
 
-  
-  <div>
-    <%= f.label :name %><br/>
-    <%= f.text_field :name %>
-  </div>
-  
-  <div>
-    <%= f.label :email %><br/>
-    <%= f.text_field :email %>
-  </div>
-  
-  <div>
-    <%= f.label :message %><br/>
-    <%= f.text_area :message %>
-  </div>
-  
-  <div>
-    <%= f.submit "Send" %>
-  </div>
-<% end %>
+  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+    <%= f.input :name, :required => true %>
+    <%= f.input :email, :required => true %>
+    <%= f.input :message, :as => :text, :required => true %>
+    <div class= "hidden">
+      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+    </div>
+    <div>
+      </br>
+      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>

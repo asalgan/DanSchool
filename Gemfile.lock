@@ -88,8 +88,6 @@ GEM
       net-ssh (>= 2.6.5)
     net-ssh (2.9.0)
     polyglot (0.3.4)
-    pony (1.8)
-      mail (>= 2.0)
     quiet_assets (1.0.2)
       railties (>= 3.1, < 5.0)
     rack (1.5.2)
@@ -170,7 +168,6 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   mail_form
-  pony
   quiet_assets
   rails (= 4.0.3)
   rails_layout

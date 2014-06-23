@@ -14,7 +14,6 @@ gem 'sendgrid'
 gem 'font-awesome-rails'
 gem 'mail_form'
 gem 'simple_form'
-gem 'pony'
 
 group :development do
   gem 'better_errors'
