@@ -9,6 +9,6 @@ ActionMailer::Base.smtp_settings = {
     port: 587,
     domain: "heroku.com",
     authentication: "plain",
-    user_name: ENV["GMAIL_USERNAME"],
-    password: ENV["GMAIL_PASSWORD"]
+    user_name: ENV["SENDGRID_USERNAME"],
+    password: ENV["SENDGRID_PASSWORD"]
   }
