@@ -23,7 +23,7 @@ $(document).ready(function() {
     $this.button('loading');
     setTimeout(function() {
         $this.button('reset');
-    }, 3500);
+    }, 500);
    });
 
 });
