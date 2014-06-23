@@ -6,7 +6,7 @@ DanSchool::Application.initialize!
 
 ActionMailer::Base.smtp_settings = {
     address: "smtp.gmail.com",
-    port: 25,
+    port: 587,
     domain: "www.gmail.com",
     authentication: "plain",
     user_name: ENV["GMAIL_USERNAME"],
