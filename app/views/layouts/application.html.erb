@@ -13,7 +13,11 @@
   </head>
   <body>
     <header>
-      <%#= render 'layouts/navigation' %>
+      <div class="container">
+        <%= link_to root_url do %>
+          <img src="/assets/logo.png" alt="" class="logo">
+        <% end %>
+      </div>
     </header>
     <main role="main">
        <%= render 'layouts/messages' %>

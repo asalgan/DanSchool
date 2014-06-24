@@ -82,6 +82,15 @@ body {
    -webkit-font-smoothing: antialiased;
 }
 
+header {
+  position: absolute;
+
+  .logo {
+    max-height: 130px;
+    float: left;
+  }
+}
+
 %teal-button {
   background-color: $darkteal;
   padding: 10px 60px;
