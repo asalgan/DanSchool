@@ -1,6 +1,8 @@
 // import the CSS framework
 @import "bootstrap";
 
+$darkteal: #55B4B0;
+
 %form-fields {
   width: 50%;
   border-radius: 3px;
@@ -19,12 +21,55 @@
   transition: all 0.2s ease;
 }
 
+%class-page {
+
+  .featured-content {
+    margin-top: 40px;
+    height: 350px;
+
+    .teacher-pic {
+      background-color: white;
+      height: 350px;
+      padding: 0px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.15);
+      border-radius: 3px;
+    }
+
+    .intro-info {
+      background-color: white;
+      height: 350px;
+      padding: 0px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.15);
+      border-radius: 3px;
+
+      .info-title {
+        height: 56px;
+        background-color: $darkteal;
+        border-bottom-color: #3d4e5b;
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+
+        h3 {
+          margin: 0px;
+          font-family: 'Noto Sans', sans-serif;
+          color: white; 
+          padding: 15px;
+        }
+
+        p {
+          padding: 15px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+}
+
 body {
   font-family: 'Noto Sans', sans-serif;
    -webkit-font-smoothing: antialiased;
 }
-
-$darkteal: #55B4B0;
 
 %teal-button {
   background-color: $darkteal;
@@ -304,52 +349,28 @@ img {
   }
 }
 
-.course-info {
+.course-info-entrep {
   min-height: 500px;
   background-image: url('/assets/entrep.jpg');
+  @extend %class-page;
   background-repeat: no-repeat;
   background-size: cover;
+}
 
-  .featured-content {
-    margin-top: 40px;
-    height: 350px;
+.course-info-se {
+  min-height: 500px;
+  background-image: url('/assets/se-page.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  @extend %class-page;
+}
 
-    .teacher-pic {
-      background-color: white;
-      height: 350px;
-      padding: 0px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.15);
-      border-radius: 3px;
-    }
-
-    .intro-info {
-      background-color: white;
-      height: 350px;
-      padding: 0px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.15);
-      border-radius: 3px;
-
-      .info-title {
-        height: 56px;
-        background-color: $darkteal;
-        border-bottom-color: #3d4e5b;
-        border-top-right-radius: 3px;
-        border-top-left-radius: 3px;
-
-        h3 {
-          margin: 0px;
-          font-family: 'Noto Sans', sans-serif;
-          color: white; 
-          padding: 15px;
-        }
-
-        p {
-          padding: 15px;
-          font-size: 16px;
-        }
-      }
-    }
-  }
+.course-info-ps {
+  min-height: 500px;
+  background-image: url('/assets/ps_page.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  @extend %class-page;
 }
 
 .hidden { display: none; }
