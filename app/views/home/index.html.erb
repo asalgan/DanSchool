@@ -109,7 +109,12 @@
 
 <section class="sixth-section">
 	<div class="container">
-	  <div align="center" class="contact-us-form col-md-6 col-md-offset-3">
+		<div class="location col-md-2">
+			<p class="address col-md-12">1234 Main St.</p>
+			<p class="address col-md-12">Evanston, IL</p>
+			<h1>IMAGE OF MAP</h1>
+		</div>
+	  <div align="center" class="contact-us-form col-md-6 col-md-offset-1">
 		  <h3>HAVE A QUESTION? SEND US A MESSAGE</h3>
 		  <%= simple_form_for Contact.new, :html => {:class => 'form-horizontal' }, remote: true do |f| %>
 		    <%= f.input :name, placeholder: "Enter your name", :required => true %>
@@ -125,8 +130,28 @@
 		    <div class="thanks-for-message"></div>
 		  <% end %>
 		</div>
+		<div class="location col-md-2 col-md-offset-1">
+			<p class="address col-md-12">2552 Chicago St.</p>
+			<p class="address col-md-12">Chicago, IL</p>
+			<h1>IMAGE OF MAP</h1>
+		</div>
 	</div>
 </section>
+
+<footer>
+	<div class="container">
+		<%= link_to root_url do %>
+      <img src="/assets/logo.png" alt="" class="logo">
+    <% end %>
+    <i class="fa fa-twitter col-md-1 col-md-offset-4"></i>
+    <nav class="footer-nav">
+	    <ul>
+	    	<li><%= link_to 'Blog', blog_url %></li>
+	    	<li><%= link_to 'Feedback', '#' %></li>
+	    </ul>
+		</nav>
+	</div>
+</footer>
 
 
 
