@@ -49,6 +49,14 @@ li {
 
       h4 {
         text-align: center;
+
+        .bio-link {
+          color: #2a6496;
+          &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
       }
     }
 
