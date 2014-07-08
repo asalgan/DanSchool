@@ -117,27 +117,14 @@
 			<p class="address col-md-12" id="address">Evanston, IL 60202</p>
 			<img src="/assets/evanston.png" alt="">
 		</div>
-	  <div align="center" class="contact-us-form col-md-6">
-		  <h3>HAVE A QUESTION? SEND US A MESSAGE</h3>
-		  <%= simple_form_for Contact.new, :html => {:class => 'form-horizontal' }, remote: true do |f| %>
-		    <%= f.input :name, placeholder: "Enter your name", :required => true %>
-		    <%= f.input :email, placeholder: "Enter your email address", :required => true %>
-		    <%= f.input :message,  placeholder: "Message", :as => :text, :required => true %>
-		    <div class= "hidden">
-		      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
-		    </div>
-		    <div>
-		      </br>
-		      <%= f.button :submit, 'Send message', data: { "loading-text" => "Sending..." }, :class=> "btn btn-primary contact-submit" %>
-		    </div>
-		    <div class="thanks-for-message"></div>
-		  <% end %>
-		</div>
+
 		<div class="location col-md-3">
 			<p class="address col-md-12">2545 W Diversey Ave.</p>
 			<p class="address col-md-12" id="address">Chicago, IL 60647</p>
 			<img src="/assets/chicago.png" alt="">
 		</div>
+			<span class="bio-link" data-toggle="modal" data-target="#myModal">Form</span>
+			<%= render 'contact_modal' %>
 	</div>
 </section>
 
