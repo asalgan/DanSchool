@@ -13,15 +13,12 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <%= link_to root_url do %>
-          <img src="/assets/logo.png" alt="" class="logo">
-        <% end %>
-      </div>
+      <%= render 'layouts/header' unless @disable_header %>
     </header>
     <main role="main">
        <%= render 'layouts/messages' %>
        <%= yield %>
     </main>
   </body>
+    <%= render 'layouts/footer' %>
 </html>

@@ -1,0 +1,24 @@
+<div id="footer">
+	<div class="container">
+
+		<%= link_to root_url do %>
+      <img src="/assets/logo_dark.jpg" alt="" class="logo col-md-2">
+    <% end %>
+
+		<div class="social-links col-md-2 col-md-offset-4">
+			<%= link_to "http://twitter.com/coursepioneer" do %>
+				<i class="fa fa-twitter"></i>
+			<% end %>
+			<%= link_to "http://facebook.com/coursepioneer" do %>
+				<i class="fa fa-facebook"></i>
+			<% end %>
+		</div>
+    
+    <nav class="footer-nav">
+	    <ul>
+	    	<li><%= link_to 'Blog', blog_url %></li>
+	    	<li><%= link_to 'Feedback', '#' %></li>
+	    </ul>
+		</nav>
+	</div>
+</div>
