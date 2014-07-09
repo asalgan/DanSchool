@@ -327,7 +327,12 @@ img {
   .location {
     display: inline-block;
     float: left;
-    margin-top: 60px;
+    margin-top: 40px;
+
+    h3 {
+      text-align: center;
+      margin-top: 5px;
+    }
 
     .address {
       display: inline-block;
@@ -342,68 +347,88 @@ img {
     }
   }
 
-  .contact-us-form {
-    padding: 0px;
-    // padding-bottom: 30px;
-    // box-shadow: 0 0 3px rgba(0,0,0,0.15);
-    // border-radius: 3px;
+  .contact-us {
+    margin-top: 185px;
 
-    h3 {
+    .contact-link {
       text-align: center;
-      margin: 0px;
-      padding: 10px;
-      font-family: source-sans-pro, sans-serif;
+      background-color: $darkteal;
       color: white;
-      background-color: #f3715d;
-      margin-bottom: 15px;
-    }
-
-    label {
-      width: 100px;
-      vertical-align: top;
-      margin-top: 20px;
-    }
-
-    #contact_name, #contact_email {
-      @extend %form-fields;
-      height: 38px;
-      width: 380px;
-      font-weight: 400;
+      padding: 8px 10px;
+      border-radius: 4px;
       font-size: 16px;
-      color: #515357;
-      padding-left: 5px;
       margin-top: 10px;
-    }
-
-    #contact_message {
-      @extend %form-fields;
-      width: 380px;
-      font-weight: 400;
-      font-size: 16px;
-      color: #515357;
-      padding-left: 5px;
-      margin-top: 10px;
-      height: 80px;
-    }
-
-    .contact-submit {
-      height: 40px;
-      width: 130px;
-      background-color: #4D96B0;
-      border: none;
-      font-family: 'Noto Sans', sans-serif;
-      -webkit-font-smoothing: antialiased;
-      @extend %transition;
-      font-weight: 600;
-      border-radius: 3px;
 
       &:hover {
-        background-color: darken(#4D96B0, 10%)
+        cursor: pointer;
+        background-color: darken($darkteal, 10%)
       }
     }
 
-    .thanks {
-      margin-top: 10px;
+    h4 {
+      text-align: center;
+    }
+
+    .contact-us-form {
+      padding: 0px;
+
+      h3 {
+        text-align: center;
+        margin: 0px;
+        padding: 10px;
+        font-family: source-sans-pro, sans-serif;
+        color: white;
+        background-color: #f3715d;
+        margin-bottom: 15px;
+      }
+
+      label {
+        width: 100px;
+        vertical-align: top;
+        margin-top: 20px;
+      }
+
+      #contact_name, #contact_email {
+        @extend %form-fields;
+        height: 38px;
+        width: 380px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #515357;
+        padding-left: 5px;
+        margin-top: 10px;
+      }
+
+      #contact_message {
+        @extend %form-fields;
+        width: 380px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #515357;
+        padding-left: 5px;
+        margin-top: 10px;
+        height: 80px;
+      }
+
+      .contact-submit {
+        height: 40px;
+        width: 130px;
+        background-color: #4D96B0;
+        border: none;
+        font-family: 'Noto Sans', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        @extend %transition;
+        font-weight: 600;
+        border-radius: 3px;
+
+        &:hover {
+          background-color: darken(#4D96B0, 10%)
+        }
+      }
+
+      .thanks {
+        margin-top: 10px;
+      }
     }
   }
 

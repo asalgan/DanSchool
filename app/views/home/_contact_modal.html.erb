@@ -1,32 +1,33 @@
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
+	<div class="modal-dialog">
+		<div class="modal-content">
 		    	
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-		      </div>
+		  <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      </div>
 
-		      <div class="modal-body">
-		        <div align="center" class="contact-us-form col-md-12">
-					  <h3>HAVE A QUESTION? SEND US A MESSAGE</h3>
-					  <%= simple_form_for Contact.new, :html => {:class => 'form-horizontal' }, remote: true do |f| %>
-					    <%= f.input :name, placeholder: "Enter your name", :required => true %>
-					    <%= f.input :email, placeholder: "Enter your email address", :required => true %>
-					    <%= f.input :message,  placeholder: "Message", :as => :text, :required => true %>
-					    <div class= "hidden">
-					      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
-					    </div>
-					    <div>
-					      </br>
-					      <%= f.button :submit, 'Send message', data: { "loading-text" => "Sending..." }, :class=> "btn btn-primary contact-submit" %>
-					    </div>
-					    <div class="thanks-for-message"></div>
-					  <% end %>
-					</div>
-	      </div>
-	      <div class="modal-footer">
-
-	      </div>
+      <div class="modal-body">
+        <div align="center" class="contact-us-form col-md-12">
+			  	<h3>Fill out the form below and we'll get back to you shortly!</h3>
+			  	<%= simple_form_for Contact.new, :html => {:class => 'form-horizontal' }, remote: true do |f| %>
+			    <%= f.input :name, placeholder: "Enter your name", :required => true %>
+			    <%= f.input :email, placeholder: "Enter your email address", :required => true %>
+			    <%= f.input :message,  placeholder: "Message", :as => :text, :required => true %>
+			    <div class= "hidden">
+			      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+			    </div>
+			    <div>
+			      </br>
+			      <%= f.button :submit, 'Send message', data: { "loading-text" => "Sending..." }, :class=> "btn btn-primary contact-submit" %>
+			    </div>
+			    <div class="thanks-for-message"></div>
+			  <% end %>
+			</div>
     </div>
+
+    <div class="modal-footer">
+
+    </div>
+
   </div>
 </div>
