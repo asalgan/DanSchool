@@ -9,5 +9,6 @@ DanSchool::Application.routes.draw do
 
 	# match '/contacts',     to: 'contacts#new',             via: 'get'
 	resources "contacts", only: [:new, :create]
+	resources "registrations", only: [:new, :create]
 	
 end
