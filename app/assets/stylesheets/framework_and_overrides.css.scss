@@ -514,19 +514,79 @@ img {
 }
 
 .entrep-main-points, .ps-main-points, .se-main-points {
-  font-size: 16px;
-  font-family: 'Noto Sans', sans-serif;
-  color: lighten(black, 40%);
+
 
   .main-points {
     margin: 30px 0px 50px 0px;
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    color: lighten(black, 40%);
 
     .main-points-list {
+      padding-left: 20px;
 
       li {
         padding: 5px 0px;
         border-bottom: 1px solid #eee;
       }
+    }
+  }
+
+  .schedule {
+    margin-top: 30px;
+    font-family: 'Noto Sans', sans-serif;
+
+    h3 {
+      color: lighten(black, 40%);
+    }
+
+    h4 {
+      margin-top: 20px;
+    }
+
+    .dates {
+      padding-left: 0px;
+
+      li {
+        padding: 5px 10px;
+        background-color: #f3f4f6;
+        border-radius: 4px;
+        margin-top: 15px;
+
+        .days {
+          width: 80px;
+          display: inline-block;
+          text-align: left;
+        }
+
+        .date {
+          padding: 0px 10px;
+          width: 170px;
+          display: inline-block;
+          text-align: left;
+          border-left: 1px solid #d0d0d0;
+        }
+
+        .time {
+          padding-left: 10px;
+          border-left: 1px solid #d0d0d0;
+        }
+      }
+    }
+  }
+
+  .register-link {
+    text-align: center;
+    background-color: $darkteal;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 20px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: darken($darkteal, 10%)
     }
   }
 }
