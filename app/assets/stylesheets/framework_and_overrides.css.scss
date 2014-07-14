@@ -573,12 +573,16 @@ img {
         }
       }
     }
+    .modal-title {
+      text-align: center;
+    }
   }
 
   .register-link {
     text-align: center;
     background-color: $darkteal;
     color: white;
+    @extend %transition;
     padding: 8px 10px;
     border-radius: 4px;
     font-size: 16px;
@@ -605,6 +609,30 @@ img {
       font-size: 16px;
       color: #515357;
       padding-left: 5px;
+    }
+
+    .checkbox {
+      input {
+        width: 20px;
+      }
+      label {
+        width: 230px;
+      }
+    }
+    .contact-submit {
+      height: 40px;
+      background-color: #4D96B0;
+      border: none;
+      color: white;
+      font-family: 'Noto Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      @extend %transition;
+      font-weight: 600;
+      border-radius: 3px;
+
+      &:hover {
+        background-color: darken(#4D96B0, 10%)
+      }
     }
   }
 }

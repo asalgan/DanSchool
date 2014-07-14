@@ -4,7 +4,7 @@
 
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Register now</h4>
+        <h4 class="modal-title" id="myModalLabel">You can register for multiple classes below. Let's get started!</h4>
       </div>
 
       <div class="modal-body col-md-10 col-md-offset-1">
@@ -19,7 +19,11 @@
 			    <%= f.input :city, :required => true %>
 			    <%= f.input :state, :required => true %>
 			    <%= f.input :zip, :required => true %>
-			    <%= f.input :class, collection: Registration.classes_evanston, as: :radio_buttons %>
+			    <h4>Evanston</h4>
+			    <%= f.input :classes, :collection => Registration.classes_evanston, as: :check_boxes, :class => "checkox" %>
+			    <h4>Chicago</h4>
+			   	<%= f.input :classes, :collection => Registration.classes_chicago, as: :check_boxes, :class => "checkox" %>
+
 			    
 			    <div class= "hidden">
 			      <%= f.input :nickname, :hint => 'Leave this field blank!' %>

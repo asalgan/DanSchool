@@ -10,7 +10,7 @@ class Registration < MailForm::Base
   attribute :city,  :validate => true
   attribute :state,  :validate => true
   attribute :zip,  :validate => true
-  attribute :class,  :validate => true
+  attribute :classes,  :validate => true
   attribute :nickname,  :captcha  => true
 
   # Declare the e-mail headers. It accepts anything the mail method
@@ -24,7 +24,21 @@ class Registration < MailForm::Base
   end
 
   def self.classes_evanston
-    [["Full Time","Full Time"], ["Part Time","Part Time"], ["Temporary","Temporary"]]
+    ["Entrepreneurship Mon - Thu August 11th - 21st 6:00pm - 7:30pm",
+      "Entrepreneurship Mon - Thu Sept. 22nd - Oct. 2nd 4:00pm - 5:30pm",
+      "Entrepreneurship Sundays Sept. 14th - Nov. 9th 10:00am - 11:30am",
+      "Entrepreneurship Sundays Sept. 28th - Nov. 23rd 1:30pm - 3:00pm",
+      "Public Speaking Mon - Thu August 11th - 21st 7:45pm - 9:15pm",
+      "Public Speaking Mon - Thu Sept. 22nd - Oct. 2nd 5:45pm - 7:15pm",
+      "Public Speaking Sundays Sept. 14th - Nov. 9th 11:45am - 1:15pm",
+      "Public Speaking Sundays Sept. 28th - Nov. 23rd 3:15pm - 4:45pm"]
   end
+
+  def self.classes_chicago
+    ["Entrepreneurship Saturdays Sept. 13th - Nov. 8th 10:00am - 11:30am",
+    "Public Speaking Saturdays Sept. 13th - Nov. 8th 11:45am - 1:15pm"]
+  end
+
+
 
 end
