@@ -1,5 +1,7 @@
 DanSchool::Application.routes.draw do
 
+  get "registration_form/new"
+  get "registration_form/create"
 	root :to => "home#index"
 
 	get '/classes/intro_to_entrepreneurship' => 'classes#intro_to_entrepreneurship'

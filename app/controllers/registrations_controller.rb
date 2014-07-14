@@ -2,6 +2,7 @@ class RegistrationsController < ApplicationController
 
 	def new
     @registration = Registration.new
+    @evanston_classes = Registration.classes_evanston
   end
 
   def create

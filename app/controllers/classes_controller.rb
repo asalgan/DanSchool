@@ -9,5 +9,6 @@ class ClassesController < ApplicationController
   def social_enterprise 
   end
 
+
   
 end
