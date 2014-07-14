@@ -24,6 +24,14 @@ $(document).ready(function() {
     setTimeout(function() {
         $this.button('reset');
     }, 500);
-   });
+  });
+
+	$('.register-submit').click(function () {
+    var $this = $(this);
+    $this.button('loading');
+    setTimeout(function() {
+        $this.button('reset');
+    }, 500);
+  });
 
 });
