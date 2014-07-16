@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 ruby '2.0.0'
 gem 'rails', '4.0.3'
 
@@ -33,3 +33,8 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
+
+
+gem 'rubber'
+gem 'open4'
+gem 'therubyracer', :platform => :ruby
