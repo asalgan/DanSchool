@@ -3,10 +3,6 @@
 
 $darkteal: #55B4B0;
 
-// body {
-//   background-color: #f8f9fb;
-// }
-
 li {
   list-style: none;
 }
@@ -242,6 +238,12 @@ img {
       text-decoration: none;
       }
     }
+  }
+
+  .class-img {
+    -webkit-box-shadow: 0 2px 3px rgba(56,67,67,0.2);
+    -moz-box-shadow: 0 2px 3px rgba(56,67,67,0.2);
+    box-shadow: 0 2px 3px rgba(56,67,67,0.2);
   }
 }
 
