@@ -587,7 +587,7 @@ img {
     background-color: $darkteal;
     color: white;
     @extend %transition;
-    padding: 8px 10px;
+    padding: 16px 20px;
     border-radius: 4px;
     font-size: 16px;
     margin-top: 20px;
@@ -638,6 +638,13 @@ img {
         background-color: darken(#4D96B0, 10%)
       }
     }
+  }
+
+  .price {
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
   }
 }
 
