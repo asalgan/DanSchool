@@ -34,7 +34,3 @@ group :production do
   gem 'rails_12factor'
 end
 
-
-gem 'rubber'
-gem 'open4'
-gem 'therubyracer', :platform => :ruby
