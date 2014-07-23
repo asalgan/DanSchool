@@ -1,3 +1,3 @@
 class UserMailer < ActionMailer::Base
-  default to: "asalganik1@gmail.com"
+  default to: "dan@coursepioneer.com"
 end

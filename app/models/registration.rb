@@ -18,7 +18,7 @@ class Registration < MailForm::Base
   def headers
     {
       :subject => "Registration",
-      :to => "asalganik1@gmail.com",
+      :to => "dan@coursepioneer.com",
       :from => %("#{name}" <#{email}>)
     }
   end
