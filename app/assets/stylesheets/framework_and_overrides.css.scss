@@ -335,6 +335,11 @@ img {
       margin-top: 5px;
     }
 
+    img {
+      max-height: 255px;
+      max-width: 255px;
+    }
+
     .address {
       display: inline-block;
       text-align: center;
