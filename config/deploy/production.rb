@@ -8,6 +8,7 @@ set :branch, 'master'
 
 #role :app, %w{deploy@coursepioneer.com}
 role :web, %w{deploy@coursepioneer.com}
+		# instead put deploy@IPADDRESS
 #role :db,  %w{deploy@coursepioneer.com}
 
 
