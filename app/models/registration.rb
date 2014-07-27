@@ -3,6 +3,7 @@ class Registration < MailForm::Base
   attribute :name,      :validate => true
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :phone,  :validate => true
+  attribute :age,  :validate => true
   attribute :guardian,  :validate => true
   attribute :guardian_email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :guardian_phone,  :validate => true
