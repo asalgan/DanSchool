@@ -25,20 +25,19 @@
 			    <h4>Chicago</h4>
 			   	<%= f.input :classes, :collection => Registration.classes_chicago, as: :check_boxes, :class => "checkox" %>
 
-			    
 			    <div class= "hidden">
 			      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
 			    </div>
+
 			    <div>
 			      <%= f.button :submit, 'Register', data: { "loading-text" => "Submitting..." }, :class=> "btn btn-primary register-submit" %>
 			    </div>
+
 			    <div class="thanks-for-registering"></div>
 			  <% end %>
       </div>
 
-      <div class="modal-footer">
- 
-      </div>
+      <div class="modal-footer"></div>
 
     </div>
   </div>

@@ -372,11 +372,13 @@ img {
 
   .sponsors {
     margin-top: 20px;
+    text-align:center;
 
     .sponsor-logo {
       max-height: 175px;
       max-width: 175px;
-      margin-bottom: 20px;
+      margin: 0px 10px 20px 10px;
+      display: inline;
     }
   }
 }
@@ -398,23 +400,20 @@ img {
       max-height: 255px;
       max-width: 255px;
       padding: 0px;
+      margin-top: 25px;
     }
 
     .address {
-      display: inline-block;
       text-align: center;
       font-size: 16px;
       color: lighten(black, 30%);
       margin-bottom: 0px;
     }
-
-    #address {
-      margin-bottom: 25px;
-    }
   }
 
   .contact-us {
-    margin-top: 185px;
+    margin-top: 15%;
+    float: left;
 
     .contact-link {
       text-align: center;
@@ -424,6 +423,7 @@ img {
       border-radius: 4px;
       font-size: 16px;
       margin-top: 10px;
+      margin-bottom: 30px;
 
       &:hover {
         cursor: pointer;
