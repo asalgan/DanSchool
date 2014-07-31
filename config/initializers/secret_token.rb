@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-DanSchool::Application.config.secret_key_base = ENV["SECRET_KEY_BASE"]
+DanSchool::Application.config.secret_key_base = 'fbe9dbe65cac91402074b59f35aed8ed2078c357c601dae5318d9d7d37dc1d191f0006563ab627b3b1d8afc095ae701a2936771fb53cfb2896dba9802896ef93'
