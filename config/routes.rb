@@ -1,5 +1,6 @@
 DanSchool::Application.routes.draw do
 
+  get "sitemaps/index"
   get "registration_form/new"
   get "registration_form/create"
 	root :to => "home#index"
@@ -12,5 +13,7 @@ DanSchool::Application.routes.draw do
 	# match '/contacts',     to: 'contacts#new',             via: 'get'
 	resources "contacts", only: [:new, :create]
 	resources "registrations", only: [:new, :create]
+
+	get "/sitemap.xml" => "sitemaps#index", as: "sitemap", defaults: { format: "xml" }
 	
 end

@@ -4,6 +4,9 @@ SitemapGenerator::Sitemap.ping_search_engines
 
 SitemapGenerator::Sitemap.create do
   # Put links creation logic here.
+
+  add '/classes', :changefreq => 'daily', :priority => 0.9
+  add '/blog', :changefreq => 'weekly'
   #
   # The root path '/' and sitemap index file are added automatically for you.
   # Links are added to the Sitemap in the order they are specified.
