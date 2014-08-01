@@ -8,7 +8,7 @@ class SitemapPinger
   def self.ping
     SitemapLogger.info Time.now
     SEARCH_ENGINES.each do |name, url|
-      request = url % CGI.escape("#{DanSchool['root_url']}/sitemap.xml")  
+      request = url % CGI.escape("#{coursepioneer['root_url']}/sitemap.xml")  
       SitemapLogger.info "  Pinging #{name} with #{request}"
       if Rails.env == "production"
         response = Net::HTTP.get_response(URI.parse(request))
