@@ -8,33 +8,33 @@
       </div>
 
       <div class="modal-body col-md-10 col-md-offset-1">
-				<%= simple_form_for Registration.new, :html => {:class => 'form-horizontal' }, remote: true do |f| %>
-			    <%= f.input :name, placeholder: "Student's full name", :required => true %>
-			    <%= f.input :email, placeholder: "Student's email address", :required => true %>
-			    <%= f.input :phone, placeholder: "Student's phone number", :required => true %>
-			    <%= f.input :age, placeholder: "Student's age", :required => true %>
-			    <%= f.input :guardian, placeholder: "Guardian's full name", :required => true %>
-			    <%= f.input :guardian_email, placeholder: "Guardian's email address", :required => true %>
-			    <%= f.input :guardian_phone, placeholder: "Guardian's phone number", :required => true %>
-			    <%= f.input :address, :required => true %>
-			    <%= f.input :city, :required => true %>
-			    <%= f.input :state, :required => true %>
-			    <%= f.input :zip, :required => true %>
-			    <h4>Evanston</h4>
-			    <%= f.input :classes, :collection => Registration.classes_evanston, as: :check_boxes, :class => "checkox" %>
-			    <h4>Chicago</h4>
-			   	<%= f.input :classes, :collection => Registration.classes_chicago, as: :check_boxes, :class => "checkox" %>
+        <%= simple_form_for Registration.new, :html => {:class => 'form-horizontal' }, remote: true do |f| %>
+          <%= f.input :name, placeholder: "Student's full name", :required => true %>
+          <%= f.input :email, placeholder: "Student's email address", :required => true %>
+          <%= f.input :phone, placeholder: "Student's phone number", :required => true %>
+          <%= f.input :age, placeholder: "Student's age", :required => true %>
+          <%= f.input :guardian, placeholder: "Guardian's full name", :required => true %>
+          <%= f.input :guardian_email, placeholder: "Guardian's email address", :required => true %>
+          <%= f.input :guardian_phone, placeholder: "Guardian's phone number", :required => true %>
+          <%= f.input :address, :required => true %>
+          <%= f.input :city, :required => true %>
+          <%= f.input :state, :required => true %>
+          <%= f.input :zip, :required => true %>
+          <h4>Evanston</h4>
+          <%= f.input :classes, :collection => Registration.classes_evanston, as: :check_boxes, :class => "checkox" %>
+          <h4>Chicago</h4>
+          <%= f.input :classes, :collection => Registration.classes_chicago, as: :check_boxes, :class => "checkox" %>
 
-			    <div class= "hidden">
-			      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
-			    </div>
+          <div class= "hidden">
+            <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+          </div>
 
-			    <div>
-			      <%= f.button :submit, 'Register', data: { "loading-text" => "Submitting..." }, :class=> "btn btn-primary register-submit" %>
-			    </div>
+          <div>
+            <%= f.button :submit, 'Register', data: { "loading-text" => "Submitting..." }, :class=> "btn btn-primary register-submit" %>
+          </div>
 
-			    <div class="thanks-for-registering"></div>
-			  <% end %>
+          <div class="thanks-for-registering"></div>
+        <% end %>
       </div>
 
       <div class="modal-footer"></div>

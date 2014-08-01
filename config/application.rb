@@ -10,9 +10,11 @@ Bundler.require(:default, Rails.env)
 module DanSchool
   class Application < Rails::Application
 
+    config.active_record.observers = :sitemap_observer
+
     config.generators do |g|
       
-      
+    
     end
 
     # Settings in config/environments/* take precedence over those specified here.

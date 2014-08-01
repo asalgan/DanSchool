@@ -1,6 +1,5 @@
 DanSchool::Application.routes.draw do
 
-  get "sitemaps/index"
   get "registration_form/new"
   get "registration_form/create"
 	root :to => "home#index"
