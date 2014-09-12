@@ -11,7 +11,7 @@ DanSchool::Application.configure do
 
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true
-  config.action_controller.perform_caching = true
+  config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
@@ -27,7 +27,7 @@ DanSchool::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 
-  ActionMailer::Base.smtp_settings = {
+  config.action_mailer.smtp_settings = {
     address: "smtp.gmail.com",
     port: 587,
     domain: "gmail.com",
