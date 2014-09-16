@@ -25,19 +25,15 @@ class Registration < MailForm::Base
   end
 
   def self.classes_evanston
-    ["Entrepreneurship Mon - Thu August 11th - 21st 5:00pm - 6:30pm",
-      "Entrepreneurship Mon - Thu Sept. 22nd - Oct. 2nd 6:30pm - 8:00pm",
-      "Entrepreneurship Sundays Sept. 14th - Nov. 9th 10:00am - 11:30am",
-      "Entrepreneurship Sundays Sept. 28th - Nov. 23rd 1:30pm - 3:00pm",
-      "Public Speaking Mon - Thu August 11th - 21st 6:45pm - 8:15pm",
-      "Public Speaking Mon - Thu Sept. 22nd - Oct. 2nd 8:00pm - 9:30pm",
-      "Public Speaking Sundays Sept. 14th - Nov. 9th 11:45am - 1:15pm",
-      "Public Speaking Sundays Sept. 28th - Nov. 23rd 3:15pm - 4:45pm"]
+    ["Entrepreneurship Mon - Thu October 6th - 16th 5:00pm - 6:30pm",
+      "Entrepreneurship Sundays October 5th - Nov. 23rd 10:00am - 11:30am",
+      "Public Speaking Mon - Thu October 6th - 16th 6:45pm - 8:15pm",
+      "Public Speaking Sundays October 5th - Nov. 23rd 11:45am - 1:15pm"]
   end
 
   def self.classes_chicago
-    ["Entrepreneurship Saturdays Sept. 13th - Nov. 8th 10:00am - 11:30am",
-    "Public Speaking Saturdays Sept. 13th - Nov. 8th 11:45am - 1:15pm"]
+    ["Entrepreneurship Saturdays October 4th - Nov. 22nd 10:00am - 11:30am",
+    "Public Speaking Saturdays October 4th - Nov. 22nd 11:45am - 1:15pm"]
   end
 
 
