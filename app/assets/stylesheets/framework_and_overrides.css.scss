@@ -752,4 +752,22 @@ img {
   }
 }
 
+.faq-header {
+  text-size: 20px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.faq-questions {
+  h4 {
+    margin-top: 20px;
+  }
+  p {
+    padding-left: 20px;
+
+    &:last-child {
+      margin-bottom: 50px;
+    }
+  }
+}
 

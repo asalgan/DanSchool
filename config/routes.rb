@@ -7,7 +7,8 @@ DanSchool::Application.routes.draw do
 	get '/classes/intro-to-entrepreneurship', to: 'classes#intro_to_entrepreneurship', as: 'classes_intro_to_entrepreneurship'
 	get '/classes/public-speaking', to: 'classes#public_speaking', as: 'classes_public_speaking'
 	get '/classes/social-enterprise', to: 'classes#social_enterprise', as: 'classes_social_enterprise'
-	get '/blog' => 'blog#index'
+	get '/blog' => 'pages#blog'
+	get '/faq' => 'pages#faq'
 
 	# match '/contacts',     to: 'contacts#new',             via: 'get'
 	resources "contacts", only: [:new, :create]
