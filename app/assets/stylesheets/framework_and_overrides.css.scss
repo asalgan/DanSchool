@@ -322,11 +322,10 @@ img {
 }
 
 .fourth-section {
-  min-height: 620px;
+  min-height: 100%;
 
   .bullets {
     display: inline-block;
-    margin-bottom: 2%;
 
     .fa {
       font-size: 40px;
@@ -342,7 +341,7 @@ img {
 
     .content {
       min-height: 152px;
-      margin-top: 3%;
+      margin-top: 2%;
 
       h3 {
         margin-top: 0px;
@@ -361,26 +360,78 @@ img {
 }
 
 .fifth-section {
-  min-height: 250px;
-  background-color: #eee;
+  min-height: 100%;
 
-  .sponsors-header {
+  .fifth-section-header {
     text-align: center;
+    margin: 30px 0px 20px 0px;
     font-family: 'Noto Sans', sans-serif;
-    color: #444;
   }
 
-  .sponsors {
-    margin-top: 20px;
-    text-align:center;
+  .container-outer { 
+    overflow: scroll; 
+    min-height: 100%; 
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
 
-    .sponsor-logo {
-      max-height: 175px;
-      max-width: 175px;
-      margin: 0px 10px 20px 10px;
-      display: inline;
+  .container-inner {
+    height: 100%;
+
+    .mentors-list {
+      padding-left: 0px;
+
+      .mentor-profile {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 280px;
+      
+        img {
+          width: 80%;
+          height: 80%;
+        }
+
+        h4 {
+          text-transform: uppercase;
+          text-align: center;
+          font-weight: 700;
+          font-size: 15px;
+        }
+
+        h5 {
+          text-align: center;
+          white-space: normal;
+          max-width: 300px;
+          padding: 0px 15px;
+          text-overflow: initial;
+          line-height: 17px;
+        }
+
+        .teacher-description {
+          white-space: initial;
+        }
+      }
     }
   }
+
+  // .sponsors-header {
+  //   text-align: center;
+  //   font-family: 'Noto Sans', sans-serif;
+  //   color: #444;
+  // }
+
+  // .sponsors {
+  //   margin-top: 20px;
+  //   text-align:center;
+
+  //   .sponsor-logo {
+  //     max-height: 175px;
+  //     max-width: 175px;
+  //     margin: 0px 10px 20px 10px;
+  //     display: inline;
+  //   }
+  // }
 }
 
 .sixth-section {
