@@ -361,58 +361,63 @@ img {
 
 .fifth-section {
   min-height: 100%;
+  background-color: currentcolor;
+  padding-top: 3%;
+  padding-bottom: 3%;
 
   .fifth-section-header {
     text-align: center;
-    margin: 30px 0px 20px 0px;
+    margin: 0px 0px 20px 0px;
     font-family: 'Noto Sans', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
   }
 
-  .container-outer { 
-    overflow: scroll; 
-    min-height: 100%; 
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-  }
+  .mentors-list {
+    padding-left: 0px;
 
-  .container-inner {
-    height: 100%;
+    .mentor-profile {
+      display: inline-block;
+      vertical-align: top;
+      float: left;
+    
+      img {
+        width: 164px;
+        height: 164px;
+      }
 
-    .mentors-list {
-      padding-left: 0px;
+      h4 {
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+        font-size: 15px;
+        color: white;
+      }
 
-      .mentor-profile {
-        display: inline-block;
-        vertical-align: top;
-        max-width: 280px;
-      
-        img {
-          width: 80%;
-          height: 80%;
-        }
+      h5 {
+        text-align: center;
+        white-space: normal;
+        max-width: 164px;
+        padding: 0px 15px;
+        text-overflow: initial;
+        line-height: 17px;
+        min-height: 85px;
+        color: white;
+      }
 
-        h4 {
-          text-transform: uppercase;
-          text-align: center;
-          font-weight: 700;
-          font-size: 15px;
-        }
+      .teacher-description {
+        white-space: initial;
+      }
 
-        h5 {
-          text-align: center;
-          white-space: normal;
-          max-width: 300px;
-          padding: 0px 15px;
-          text-overflow: initial;
-          line-height: 17px;
-        }
-
-        .teacher-description {
-          white-space: initial;
-        }
+      .teacher-info {
+        border: none;
+        background-color: #55b4b0;
+        color: white;
+        font-weight: 300;
       }
     }
+
   }
 
   // .sponsors-header {
