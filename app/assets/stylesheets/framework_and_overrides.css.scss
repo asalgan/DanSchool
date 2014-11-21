@@ -361,14 +361,13 @@ img {
 
 .fifth-section {
   min-height: 100%;
-  background-color: currentcolor;
   padding-top: 3%;
 
   .fifth-section-header {
     text-align: center;
     margin: 0px 0px 20px 0px;
     font-family: 'Noto Sans', sans-serif;
-    color: white;
+    color: #333333;
     text-transform: uppercase;
     font-weight: 100;
   }
@@ -383,9 +382,9 @@ img {
       h4 {
         text-transform: uppercase;
         text-align: center;
-        font-weight: 700;
+        font-weight: 900;
         font-size: 15px;
-        color: white;
+        color: #333333;
       }
 
       h5 {
@@ -395,7 +394,7 @@ img {
         text-overflow: initial;
         line-height: 17px;
         min-height: 85px;
-        color: white;
+        color: #777;
       }
 
       .teacher-info {
@@ -425,6 +424,27 @@ img {
   //     display: inline;
   //   }
   // }
+}
+
+.teacher-modal {
+  .modal-header {
+    border-bottom: none;
+  }
+  .modal-footer {
+    border-top: none;
+  }
+
+  .modal-content {
+    border-radius: 0px;
+    background-color: #55b4b0;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 
 .sixth-section {
@@ -624,7 +644,6 @@ img {
 }
 
 .entrep-main-points, .ps-main-points, .se-main-points {
-
 
   .main-points {
     margin: 30px 0px 50px 0px;
