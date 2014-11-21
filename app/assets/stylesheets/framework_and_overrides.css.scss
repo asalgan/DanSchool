@@ -363,7 +363,6 @@ img {
   min-height: 100%;
   background-color: currentcolor;
   padding-top: 3%;
-  padding-bottom: 3%;
 
   .fifth-section-header {
     text-align: center;
@@ -380,12 +379,6 @@ img {
     .mentor-profile {
       display: inline-block;
       vertical-align: top;
-      float: left;
-    
-      img {
-        width: 164px;
-        height: 164px;
-      }
 
       h4 {
         text-transform: uppercase;
@@ -398,7 +391,6 @@ img {
       h5 {
         text-align: center;
         white-space: normal;
-        max-width: 164px;
         padding: 0px 15px;
         text-overflow: initial;
         line-height: 17px;
@@ -406,18 +398,14 @@ img {
         color: white;
       }
 
-      .teacher-description {
-        white-space: initial;
-      }
-
       .teacher-info {
         border: none;
         background-color: #55b4b0;
         color: white;
         font-weight: 300;
+        margin-bottom: 20%;
       }
     }
-
   }
 
   // .sponsors-header {
